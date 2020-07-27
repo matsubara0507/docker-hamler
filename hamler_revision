@@ -1,0 +1,2 @@
+#!/bin/bash
+grep -A1 'github: hamler-lang/hamler' stack.yaml | grep -woE "[0-9a-f]+"

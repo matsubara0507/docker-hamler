@@ -1,1 +1,5 @@
 example
+.stack-work
+bin/*
+!bin/.gitkeep
+*.cabal

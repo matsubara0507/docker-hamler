@@ -1,0 +1,31 @@
+resolver: lts-14.27
+allow-different-user: true
+
+extra-deps:
+- happy-1.19.9
+- language-javascript-0.7.0.0
+- network-3.0.1.1
+- these-1.0.1
+- semialign-1
+- github: hamler-lang/CoreErlang
+  commit: 2ea1038140118f5bc29f4cb14b50aa0918d62581
+- github: hamler-lang/purescript
+  commit: 3eeb66b8534a661efe0abbbabcfaf49c9dbafab0
+- megaparsec-8.0.0@sha256:362f85e243ecbcb550e1de6e5c74ba5a50c09edaa1208c99bc5b9fd242227fc6,3808
+- github: hamler-lang/hamler
+  commit: 6b35d6b32d0a411b23c39836cf44c65678ca828e
+- Glob-0.9.3
+- ansi-terminal-0.8.2
+- ansi-wl-pprint-0.6.8.2
+- tasty-1.2
+
+flags:
+  these:
+    assoc: false
+    quickcheck: false
+
+docker:
+  repo: matsubara0507/stack-build:lts-14.27
+  env:
+  - HAMLER_HOME=/usr/lib/hamler
+  enable: true
