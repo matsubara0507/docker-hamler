@@ -34,6 +34,10 @@ FROM erlang:${OTP_VERSION}
 ARG local_bin_path
 ARG HAMLER_HOME=/usr/lib/hamler
 WORKDIR /work
+RUN apt-get update && apt-get install -y libtinfo5 \
+ && apt-get clean \
+ && rm -rf /var/lib/apt/lists/*
 COPY --from=build ${HAMLER_HOME} ${HAMLER_HOME}
+ENV LC_ALL C.UTF-8
 ENV PATH ${HAMLER_HOME}/bin:$PATH
 ENTRYPOINT ["/usr/lib/hamler/bin/hamler"]
