@@ -40,27 +40,27 @@ packages:
   original:
     hackage: semialign-1
 - completed:
-    size: 2417587
-    url: https://github.com/hamler-lang/CoreErlang/archive/2ea1038140118f5bc29f4cb14b50aa0918d62581.tar.gz
+    size: 2417690
+    url: https://github.com/hamler-lang/CoreErlang/archive/2bacba611fed9eb773939964aa70e3ad49b8c816.tar.gz
     name: CoreErlang
     version: 0.0.5
-    sha256: 6d89e8844fa27a76a159895c2795f4f247d29a5719eee9698962d52c01e4d46c
+    sha256: 9fe5090ded617fbcf99d62504eb81b4061276345dd1d0bfd04dd46da4ff317fa
     pantry-tree:
       size: 11867
-      sha256: 76a7b449dac9b4e45c5380130b6f13ad355625def63fbf10375d1c4dfd392ad0
+      sha256: afef0003c2bc0c898c1f1f7643c861fa578f023f8221e3246f729b1ce73bc129
   original:
-    url: https://github.com/hamler-lang/CoreErlang/archive/2ea1038140118f5bc29f4cb14b50aa0918d62581.tar.gz
+    url: https://github.com/hamler-lang/CoreErlang/archive/2bacba611fed9eb773939964aa70e3ad49b8c816.tar.gz
 - completed:
-    size: 541321
-    url: https://github.com/hamler-lang/purescript/archive/bc43f3b094feee61e7b9091a69cc7154d5f7d6a7.tar.gz
+    size: 542803
+    url: https://github.com/hamler-lang/purescript/archive/5c41feb6c3f0605238364020dafd1387f1b7eee0.tar.gz
     name: purescript
     version: 0.13.6
-    sha256: b5b76e1dd506bc62592712ecd66fb3bf1c19e21c8fe1fb71a45afd373c49d595
+    sha256: 35adecd37dab49b085c1f8bf3428b66a5258ab63df0e73961fadedbe9786ee43
     pantry-tree:
       size: 79261
-      sha256: ee483d5811709aa83d29bab2750057e3da691e082ffe2a529161803c43904a54
+      sha256: 2e62521d6d54646cc9aaa55f41e1bbe2e845d17c37a8913d945416c20143c9ac
   original:
-    url: https://github.com/hamler-lang/purescript/archive/bc43f3b094feee61e7b9091a69cc7154d5f7d6a7.tar.gz
+    url: https://github.com/hamler-lang/purescript/archive/5c41feb6c3f0605238364020dafd1387f1b7eee0.tar.gz
 - completed:
     hackage: megaparsec-8.0.0@sha256:362f85e243ecbcb550e1de6e5c74ba5a50c09edaa1208c99bc5b9fd242227fc6,3808
     pantry-tree:
@@ -69,16 +69,16 @@ packages:
   original:
     hackage: megaparsec-8.0.0@sha256:362f85e243ecbcb550e1de6e5c74ba5a50c09edaa1208c99bc5b9fd242227fc6,3808
 - completed:
-    size: 124710
-    url: https://github.com/hamler-lang/hamler/archive/baa5f72e9139c60e4c72a7134132522e40138633.tar.gz
+    size: 129689
+    url: https://github.com/hamler-lang/hamler/archive/39b407a6d147bd2f4d0bf494316129bae209dc93.tar.gz
     name: hamler
-    version: 0.1.3
-    sha256: a910c90928039f4185c8593f186d3213414128d052f3f85373724e48ebe3c918
+    version: '0.2'
+    sha256: 1c44bf0e55b9fa190a89ffc2c4da1054434d6015f1d0bce7eb96cdd663c6d08f
     pantry-tree:
-      size: 14668
-      sha256: b2949d7870522511753ad04c708393aebfd1d0333633c9eac91b006cb97ed609
+      size: 15178
+      sha256: 791e7b1f83dbfb407169bc32914e3691b70946d2db00784b02bcec302d30c592
   original:
-    url: https://github.com/hamler-lang/hamler/archive/baa5f72e9139c60e4c72a7134132522e40138633.tar.gz
+    url: https://github.com/hamler-lang/hamler/archive/39b407a6d147bd2f4d0bf494316129bae209dc93.tar.gz
 - completed:
     hackage: Glob-0.9.3@sha256:d6f8d3000651a7d72fe468f3840f59fe785dc35cfc16dc76a62821cd798f34dc,2932
     pantry-tree:
