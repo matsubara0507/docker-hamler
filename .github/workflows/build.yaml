@@ -1,0 +1,37 @@
+name: Build
+
+on:
+  pull_request: null
+  push:
+    branches:
+    - master
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    strategy:
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Cache .stack
+      uses: actions/cache@v2.1.0
+      with:
+        path: |
+          ~/.stack
+        key: "\
+          ${{ runner.os }}-stack\
+          -${{ hashFiles('**/stack.yaml.lock') }}\
+          -${{ hashFiles('**/package.yaml') }}\
+        "
+        restore-keys: |
+          ${{ runner.os }}-stack-
+
+    - name: Build docker image
+      run: make image tag=hamler
+
+    - name: Run test
+      run: |
+        docker run --rm -w /work -v `pwd`/example:/work hamler init
+        docker run --rm -w /work -v `pwd`/example:/work hamler build
+        docker run --rm -w /work -v `pwd`/example:/work hamler run
